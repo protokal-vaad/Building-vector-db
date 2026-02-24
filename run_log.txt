@@ -1,0 +1,896 @@
+﻿.venv\Scripts\python.exe : C:
+\Users\CCSV\Desktop\Projects\
+protokal\Building-vector-db\.
+venv\Lib\site-packages\langch
+ain_core\_api\deprecation.py:
+25: UserWarning: Core 
+Pydantic V1 functionality 
+isn't compatible with Python 
+3.14 or greater.
+At line:1 char:1
++ .venv\Scripts\python.exe 
+main.py 2>&1 | Out-File 
+-FilePath run_log.tx ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (C:\User  
+  s\CCSV\D....14 or greate   
+ r.:String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+  from pydantic.v1.fields 
+import FieldInfo as 
+FieldInfoV1
+2026-02-24 00:32:27 | INFO     | app | Starting Vector Database Builder
+2026-02-24 00:32:27 | INFO     | app.flow_manager | Setting up FlowManager...
+2026-02-24 00:32:27 | INFO     | app.flow_manager | Connected to GCS bucket: reyhan-protocols
+2026-02-24 00:32:28 | INFO     | app.flow_manager | PDF agent ready (model: gemini-2.5-pro)
+2026-02-24 00:32:28 | INFO     | app.vector_db | Connecting to Firestore (Database: reyhan-db, Collection: reyhan-vectors)...
+2026-02-24 00:32:28 | INFO     | app.vector_db | Firestore Vector Store initialized
+2026-02-24 00:32:28 | INFO     | app.flow_manager | Vector DB service (Firestore) ready
+2026-02-24 00:32:30 | INFO     | app.flow_manager | Found 19 PDFs in 
+--- Logging error ---
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\logging\__init__.py",
+ line 1154, in emit
+    stream.write(msg + 
+self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\encodings\cp1252.py",
+ line 19, in encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+characters in position 
+59-66: character maps to 
+<undefined>
+Call stack:
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 44, 
+in <module>
+    asyncio.run(main())
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 204, in run
+    return runner.run(main)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 127, in run
+    return self._loop.run_unt
+il_complete(task)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 706, in 
+run_until_complete
+    self.run_forever()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 677, in run_forever
+    self._run_once()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 2046, in _run_once
+    handle._run()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\events.py", 
+line 94, in _run
+    self._context.run(self._c
+allback, *self._args)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 34, 
+in main
+    results = await flow_mana
+ger.process_all_pdfs()
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 130, in 
+process_all_pdfs
+    self.logger.info(f"[{i}/{
+len(pdf_files)}] 
+{blob_name}")
+Message: '[1/19] \u05e4\u05e8
+\u05d5\u05d8\u05d5\u05e7\u05d
+5\u05dc  \u05d5\u05e2\u05d3 
+\u05e8\u05d9\u05d7\u05df 
+25.03.2025 \u05e2\u05dd \u05d
+5\u05d5\u05e2\u05d3\u05ea \u0
+5ea\u05e7\u05e6\u05d9\u05d1 \
+u05de\u05d9\u05d5\u05d7\u05d3
+\u05ea 
+\u05d7\u05ea\u05d5\u05dd.pdf'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\logging\__init__.py",
+ line 1154, in emit
+    stream.write(msg + 
+self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\encodings\cp1252.py",
+ line 19, in encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+characters in position 
+65-72: character maps to 
+<undefined>
+Call stack:
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 44, 
+in <module>
+    asyncio.run(main())
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 204, in run
+    return runner.run(main)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 127, in run
+    return self._loop.run_unt
+il_complete(task)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 706, in 
+run_until_complete
+    self.run_forever()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 677, in run_forever
+    self._run_once()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 2046, in _run_once
+    handle._run()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\events.py", 
+line 94, in _run
+    self._context.run(self._c
+allback, *self._args)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 34, 
+in main
+    results = await flow_mana
+ger.process_all_pdfs()
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 131, in 
+process_all_pdfs
+    result = await self._proc
+ess_single_pdf(blob_name)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 108, in 
+_process_single_pdf
+    pdf_bytes = 
+self._download_pdf(blob_name)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 97, in _download_pdf
+    self.logger.info(f"Downlo
+ading: {blob_name}")
+Message: 'Downloading: \u05e4
+\u05e8\u05d5\u05d8\u05d5\u05e
+7\u05d5\u05dc  
+\u05d5\u05e2\u05d3 
+\u05e8\u05d9\u05d7\u05df 
+25.03.2025 \u05e2\u05dd \u05d
+5\u05d5\u05e2\u05d3\u05ea \u0
+5ea\u05e7\u05e6\u05d9\u05d1 \
+u05de\u05d9\u05d5\u05d7\u05d3
+\u05ea 
+\u05d7\u05ea\u05d5\u05dd.pdf'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\logging\__init__.py",
+ line 1154, in emit
+    stream.write(msg + 
+self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\encodings\cp1252.py",
+ line 19, in encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+characters in position 
+63-70: character maps to 
+<undefined>
+Call stack:
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 44, 
+in <module>
+    asyncio.run(main())
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 204, in run
+    return runner.run(main)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 127, in run
+    return self._loop.run_unt
+il_complete(task)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 706, in 
+run_until_complete
+    self.run_forever()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 677, in run_forever
+    self._run_once()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 2046, in _run_once
+    handle._run()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\events.py", 
+line 94, in _run
+    self._context.run(self._c
+allback, *self._args)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 34, 
+in main
+    results = await flow_mana
+ger.process_all_pdfs()
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 131, in 
+process_all_pdfs
+    result = await self._proc
+ess_single_pdf(blob_name)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 109, in 
+_process_single_pdf
+    self.logger.info(f"Downlo
+aded {file_name} 
+({len(pdf_bytes):,} bytes)")
+Message: 'Downloaded \u05e4\u
+05e8\u05d5\u05d8\u05d5\u05e7\
+u05d5\u05dc  
+\u05d5\u05e2\u05d3 
+\u05e8\u05d9\u05d7\u05df 
+25.03.2025 \u05e2\u05dd \u05d
+5\u05d5\u05e2\u05d3\u05ea \u0
+5ea\u05e7\u05e6\u05d9\u05d1 \
+u05de\u05d9\u05d5\u05d7\u05d3
+\u05ea 
+\u05d7\u05ea\u05d5\u05dd.pdf 
+(293,122 bytes)'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\logging\__init__.py",
+ line 1154, in emit
+    stream.write(msg + 
+self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\encodings\cp1252.py",
+ line 19, in encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+characters in position 
+61-68: character maps to 
+<undefined>
+Call stack:
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 44, 
+in <module>
+    asyncio.run(main())
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 204, in run
+    return runner.run(main)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 127, in run
+    return self._loop.run_unt
+il_complete(task)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 706, in 
+run_until_complete
+    self.run_forever()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 677, in run_forever
+    self._run_once()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 2046, in _run_once
+    handle._run()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\events.py", 
+line 94, in _run
+    self._context.run(self._c
+allback, *self._args)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 34, 
+in main
+    results = await flow_mana
+ger.process_all_pdfs()
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 131, in 
+process_all_pdfs
+    result = await self._proc
+ess_single_pdf(blob_name)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 111, in 
+_process_single_pdf
+    
+self.logger.info(f"Chunking 
+{file_name}...")
+Message: 'Chunking \u05e4\u05
+e8\u05d5\u05d8\u05d5\u05e7\u0
+5d5\u05dc  
+\u05d5\u05e2\u05d3 
+\u05e8\u05d9\u05d7\u05df 
+25.03.2025 \u05e2\u05dd \u05d
+5\u05d5\u05e2\u05d3\u05ea \u0
+5ea\u05e7\u05e6\u05d9\u05d1 \
+u05de\u05d9\u05d5\u05d7\u05d3
+\u05ea \u05d7\u05ea\u05d5\u05
+dd.pdf...'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\logging\__init__.py",
+ line 1154, in emit
+    stream.write(msg + 
+self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\encodings\cp1252.py",
+ line 19, in encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+characters in position 
+76-83: character maps to 
+<undefined>
+Call stack:
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 44, 
+in <module>
+    asyncio.run(main())
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 204, in run
+    return runner.run(main)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 127, in run
+    return self._loop.run_unt
+il_complete(task)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 706, in 
+run_until_complete
+    self.run_forever()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 677, in run_forever
+    self._run_once()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 2046, in _run_once
+    handle._run()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\events.py", 
+line 94, in _run
+    self._context.run(self._c
+allback, *self._args)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 34, 
+in main
+    results = await flow_mana
+ger.process_all_pdfs()
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 131, in 
+process_all_pdfs
+    result = await self._proc
+ess_single_pdf(blob_name)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 114, in 
+_process_single_pdf
+    
+self.logger.info(f"Extracted 
+{result.total_chunks} chunks 
+from {file_name}")
+Message: 'Extracted 3 chunks 
+from \u05e4\u05e8\u05d5\u05d8
+\u05d5\u05e7\u05d5\u05dc  
+\u05d5\u05e2\u05d3 
+\u05e8\u05d9\u05d7\u05df 
+25.03.2025 \u05e2\u05dd \u05d
+5\u05d5\u05e2\u05d3\u05ea \u0
+5ea\u05e7\u05e6\u05d9\u05d1 \
+u05de\u05d9\u05d5\u05d7\u05d3
+\u05ea 
+\u05d7\u05ea\u05d5\u05dd.pdf'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\logging\__init__.py",
+ line 1154, in emit
+    stream.write(msg + 
+self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+^^^^^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\encodings\cp1252.py",
+ line 19, in encode
+    return codecs.charmap_enc
+ode(input,self.errors,encodin
+g_table)[0]
+           ~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't encode 
+characters in position 
+73-80: character maps to 
+<undefined>
+Call stack:
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 44, 
+in <module>
+    asyncio.run(main())
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 204, in run
+    return runner.run(main)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 127, in run
+    return self._loop.run_unt
+il_complete(task)
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 706, in 
+run_until_complete
+    self.run_forever()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 677, in run_forever
+    self._run_once()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 2046, in _run_once
+    handle._run()
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\events.py", 
+line 94, in _run
+    self._context.run(self._c
+allback, *self._args)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 34, 
+in main
+    results = await flow_mana
+ger.process_all_pdfs()
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 131, in 
+process_all_pdfs
+    result = await self._proc
+ess_single_pdf(blob_name)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 117, in 
+_process_single_pdf
+    self._vector_db.upload_ch
+unks(result.chunks, 
+file_name)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\vector_db_servic
+e.py", line 58, in 
+upload_chunks
+    
+self.logger.info(f"Uploading 
+{len(chunks)} chunks from 
+{file_name} to Firestore...")
+2026-02-24 00:32:52 | INFO     | app.flow_manager | Uploading 3 chunks to Firestore...
+Message: 'Uploading 3 chunks 
+from \u05e4\u05e8\u05d5\u05d8
+\u05d5\u05e7\u05d5\u05dc  
+\u05d5\u05e2\u05d3 
+\u05e8\u05d9\u05d7\u05df 
+25.03.2025 \u05e2\u05dd \u05d
+5\u05d5\u05e2\u05d3\u05ea \u0
+5ea\u05e7\u05e6\u05d9\u05d1 \
+u05de\u05d9\u05d5\u05d7\u05d3
+\u05ea 
+\u05d7\u05ea\u05d5\u05dd.pdf 
+to Firestore...'
+Arguments: ()
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\langchain_google_genai\em
+beddings.py", line 432, in 
+embed_documents
+    result = self.client.mode
+ls.embed_content(
+        model=self.model,
+        contents=batch,
+        config=config,
+    )
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\google\genai\models.py", 
+line 5482, in embed_content
+    return self._embed_conten
+t(model=model, 
+contents=contents, 
+config=config)
+           ~~~~~~~~~~~~~~~~~~
+~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\google\genai\models.py", 
+line 4482, in _embed_content
+    response = 
+self._api_client.request(
+        'post', path, 
+request_dict, http_options
+    )
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\google\genai\_api_client.
+py", line 1396, in request
+    response = 
+self._request(http_request, 
+http_options, stream=False)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\google\genai\_api_client.
+py", line 1232, in _request
+    return self._retry(self._
+request_once, http_request, 
+stream)  # type: 
+ignore[no-any-return]
+           ~~~~~~~~~~~^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\tenacity\__init__.py", 
+line 470, in __call__
+    do = self.iter(retry_stat
+e=retry_state)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\tenacity\__init__.py", 
+line 371, in iter
+    result = 
+action(retry_state)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\tenacity\__init__.py", 
+line 413, in exc_check
+    raise retry_exc.reraise()
+          ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\tenacity\__init__.py", 
+line 184, in reraise
+    raise 
+self.last_attempt.result()
+          
+~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\concurrent\futures\_b
+ase.py", line 443, in result
+    return 
+self.__get_result()
+           
+~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\concurrent\futures\_b
+ase.py", line 395, in 
+__get_result
+    raise self._exception
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\tenacity\__init__.py", 
+line 473, in __call__
+    result = fn(*args, 
+**kwargs)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\google\genai\_api_client.
+py", line 1209, in 
+_request_once
+    errors.APIError.raise_for
+_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\google\genai\errors.py", 
+line 134, in 
+raise_for_response
+    cls.raise_error(response.
+status_code, response_json, 
+response)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\google\genai\errors.py", 
+line 159, in raise_error
+    raise 
+ClientError(status_code, 
+response_json, response)
+google.genai.errors.ClientErr
+or: 404 NOT_FOUND. {'error': 
+{'code': 404, 'message': 
+'models/embedding-001 is not 
+found for API version 
+v1beta, or is not supported 
+for embedContent. Call 
+ListModels to see the list 
+of available models and 
+their supported methods.', 
+'status': 'NOT_FOUND'}}
+
+The above exception was the 
+direct cause of the 
+following exception:
+
+Traceback (most recent call 
+last):
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 44, 
+in <module>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\runners.py", 
+line 127, in run
+    return self._loop.run_unt
+il_complete(task)
+           ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~^^^^^^
+  File "C:\Users\CCSV\AppData
+\Local\Python\pythoncore-3.14
+-64\Lib\asyncio\base_events.p
+y", line 719, in 
+run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\main.py", line 34, 
+in main
+    results = await flow_mana
+ger.process_all_pdfs()
+              ^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 131, in 
+process_all_pdfs
+    result = await self._proc
+ess_single_pdf(blob_name)
+             ^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\flow_manager.py"
+, line 117, in 
+_process_single_pdf
+    self._vector_db.upload_ch
+unks(result.chunks, 
+file_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\src\vector_db_servic
+e.py", line 82, in 
+upload_chunks
+    self._vector_store.add_do
+cuments(documents=documents, 
+ids=ids)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\langchain_core\vectorstor
+es\base.py", line 258, in 
+add_documents
+    return 
+self.add_texts(texts, 
+metadatas, **kwargs)
+           ~~~~~~~~~~~~~~^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\langchain_google_firestor
+e\vectorstores.py", line 
+137, in add_texts
+    texts_embs = self.embeddi
+ng_service.embed_documents(ba
+tch)
+  File "C:\Users\CCSV\Desktop
+\Projects\protokal\Building-v
+ector-db\.venv\Lib\site-packa
+ges\langchain_google_genai\em
+beddings.py", line 439, in 
+embed_documents
+    raise 
+GoogleGenerativeAIError(msg) 
+from e
+langchain_google_genai._commo
+n.GoogleGenerativeAIError: 
+Error embedding content 
+(NOT_FOUND): 404 NOT_FOUND. 
+{'error': {'code': 404, 
+'message': 
+'models/embedding-001 is not 
+found for API version 
+v1beta, or is not supported 
+for embedContent. Call 
+ListModels to see the list 
+of available models and 
+their supported methods.', 
+'status': 'NOT_FOUND'}}

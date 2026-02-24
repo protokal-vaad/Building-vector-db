@@ -1,0 +1,7 @@
+﻿publishers/google/models/multimodalembedding
+publishers/google/models/textembedding-gecko
+publishers/google/models/text-multilingual-embedding-002
+publishers/google/models/text-embedding-005
+publishers/google/models/text-embedding-large-exp-03-07
+publishers/google/models/gemini-embedding-001
+publishers/google/models/embeddinggemma

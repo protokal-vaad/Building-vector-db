@@ -1,0 +1,11 @@
+pydantic-ai[google]
+pydantic-settings
+google-cloud-storage
+google-auth
+python-dotenv
+google-cloud-firestore
+google-cloud-aiplatform
+langchain
+langchain-google-firestore
+langchain-google-genai
+langchain-google-vertexai
